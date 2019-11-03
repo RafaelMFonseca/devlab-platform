@@ -79,3 +79,22 @@ pause
 > - Inicie o projeto em modo debug \
 > `F5`
 
+### Gerando chave SSH para autenticar no GitHub
+
+Rode os seguintes comandos no Git Bash:
+
+> - Configure o usuário e senha do seu git ( é o que aparece nos commits )
+> - `git config --global user.name "Your Name"`
+> - `git config --global user.email "your_email@example.com"`
+> - Para verificar se as alterações foram aplicadas:
+> - `git config --list`
+> - Gere uma chave RSA
+> - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+> - O comando irá pedir o local para salvar e a chave secreta, apenas aperte enter para seguir com o valor padrão
+> - Acesse: https://github.com/settings/keys e clique em `New SSH key`
+> - Vá ao local da chave gerada, abra o arquivo com extensão .PUB com o bloco de notas, copie o seu conteúdo e registre no github.
+> - Faça clone do repositório ou adicione a URL remota a um repositório vazio e faça pull.
+> - Inicie o agente SSH
+> - `eval $(ssh-agent -s)`
+> - Adicione a chave SSH gerada ao agente
+> - `ssh-add ~/.ssh/id_rsa`

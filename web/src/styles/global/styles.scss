@@ -1,2 +1,13 @@
 @import "./variables";
 @import "~bootstrap/scss/bootstrap";
+
+// more border colors for: https://getbootstrap.com/docs/4.3/utilities/borders/#border-color
+$extra-border-colors: (
+    "medium-secondary": $gray-500
+);
+
+@each $color, $value in $extra-border-colors {
+    .border-#{$color} {
+        border-color: $value !important;
+    }
+}

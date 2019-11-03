@@ -14,6 +14,7 @@ public class AppBinder extends AbstractBinder {
 
     @Override
     protected void configure() {
+        /** User */
         bindAsContract(UserService.class);
         bindAsContract(UserRepository.class);
     }
