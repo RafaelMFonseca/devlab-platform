@@ -79,6 +79,8 @@ pause
 > - Inicie o projeto em modo debug \
 > `F5`
 
+---
+
 ### Gerando chave SSH para autenticar no GitHub
 
 Rode os seguintes comandos no Git Bash:
