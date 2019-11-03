@@ -1,0 +1,7 @@
+# compiled output
+target/
+
+# IDEs and editors
+.project
+.classpath
+.settings/
