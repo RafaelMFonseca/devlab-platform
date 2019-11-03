@@ -2,5 +2,13 @@ $light: #D7DEDC;
 $primary: #698F3F;
 $font-size-base: .85rem;
 
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
